@@ -101,7 +101,7 @@ nav {
   padding: 0 8px;
 }
 .benefits-text h5 {
-  margin: 0;3
+  margin: 0;
 }
 .trending-products {
   background-color: #EAEAEA;
@@ -109,10 +109,15 @@ nav {
 }
 .trending-products ul {
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0;
 }
 .trending-products-individual{
   background-color: #fff;
-  width: 25%;
+  width: 23%;
+  margin: 10px;
 }
 .trending-products-individual img {
   width: 100%;
