@@ -1,0 +1,130 @@
+header {
+  background-color: #6E4961;
+}
+.header-controls {
+  float: right;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2
+}
+.cart {
+  background-color: #FFC306;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  width: 65%;
+}
+.nav a {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #3C3D41;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px;
+}
+.hero{
+  height: 360px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero:before {
+  content:" ";
+  background: url('images/produce.jpg') center center no-repeat;
+  background-size: cover;
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right:0;
+  z-index: -1;
+}
+.hero:after {
+  content:" ";
+  background: url('images/mask.svg') center center no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right:0;
+  z-index: -1;
+}
+.hero-container{
+  text-align: center;
+}
+.hero-container  h1 {
+  font-family: 'Cherry Swash', cursive;
+  font-weight: 400;
+  font-size: 52px;
+  letter-spacing: .5;
+  color: #fff;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.benefits {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 25px 0;
+}
+.benefits-container {
+  width: 25%;
+  overflow: hidden;
+}
+.benefits img, .benefits-text {
+  float: left;
+}
+.benefits img{
+  width: 15%;
+}
+.benefits .benefits-text {
+  width: 75%;
+  padding: 0 8px;
+}
+.benefits-text h5 {
+  margin: 0;3
+}
+.trending-products {
+  background-color: #EAEAEA;
+
+}
+.trending-products ul {
+  list-style-type: none;
+}
+.trending-products-individual{
+  background-color: #fff;
+  width: 25%;
+}
+.trending-products-individual img {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  nav {
+    width: 100%;
+    margin: 20px auto;
+  }
+  .benefits-container {
+    width: 90%;
+    margin: 15px 0;
+  }
+}
