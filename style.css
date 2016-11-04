@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "Montserrat-Light";
+    src: url(fonts/Montserrat-Light.otf) format("truetype");
+}
 header {
   background-color: #6E4961;
 }
@@ -88,7 +92,7 @@ nav {
   letter-spacing: .5;
   color: #fff;
   width: 80%;
-  margin: auto;
+  margin: auto auto 10px;
   text-align: center;
 }
 .hero-container input {
@@ -134,9 +138,11 @@ nav {
 .trending-products {
   background-color: #EAEAEA;
   text-align: center;
+  padding-top: 30px;
 }
 .trending-products h5 {
     color: #3C3D41;
+    margin-bottom: 5px;
 }
 .trending-products ul {
   list-style-type: none;
@@ -144,19 +150,39 @@ nav {
   flex-wrap: wrap;
   justify-content: space-between;
   padding-left: 0;
+  margin: 0
 }
 .trending-products-individual{
   background-color: #fff;
   width: 20%;
   margin: 15px;
   position: relative;
+  border-radius: 4px;
+  padding: 20px 0;
+}
+.trending-products-individual * {
+  margin: 0 0 3px;
 }
 .trending-products-individual img {
-  width: 100%;
-  padding-top: 20px;
+  width: 80%;
 }
 
-
+.trending-products-individual h4 {
+  color: #393D3F;
+  font-size: 15px;
+}
+.trending-products-individual .body-text {
+  color: #4A4A4A;
+  font-size: 14px;
+  font-family: 'Montserrat-Light', sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.5;
+}
+.trending-products-individual .small-text{
+  color: #9B9B9B;
+  font-size: 10px;
+  font-family: 'Montserrat-Light', sans-serif;
+}
 
 .sale {
   background-color: rgba(0, 0, 0, 0.6);;
@@ -173,6 +199,13 @@ nav {
 }
 
 @media (max-width: 767px) {
+  .hero-container h1{
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+  .hero-container input {
+    margin-bottom: 10px;
+  }
   nav {
     width: 100%;
     margin: 20px auto;
