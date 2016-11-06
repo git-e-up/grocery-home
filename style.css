@@ -22,13 +22,23 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 10px;
-  letter-spacing: 2;
+  letter-spacing: 2px;
   border: 0;
   border-radius: 4px;
   color: #fff;
-  padding: 10px 15px;
+  padding: 11px 15px;
   text-transform: uppercase;
   cursor: pointer;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 15px;
+}
+h5 {
+  color: #3C3D41;
 }
 header {
   background-color: #6E4961;
@@ -36,6 +46,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .logo {
   margin-left: 10px;
@@ -44,7 +55,7 @@ header {
   color: #fff;
   font-size: 10px;
   text-transform: uppercase;
-  letter-spacing: 2
+  letter-spacing: 2px;
 }
 .primary {
   margin: 12px;
@@ -69,22 +80,12 @@ header {
   display: inline-block;
   vertical-align: middle;
 }
-/*.cart:before {
-  content: '';
-  background: url('icons/cart.svg') center center no-repeat;
-  background-size: cover;
-  width: 14px;
-  height: 15px;
-  background-size: cover;
-  display: block;
-}*/
 
 nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 20px auto;
-  width: 65%;
 }
 .nav a {
   text-transform: uppercase;
@@ -92,6 +93,12 @@ nav {
   cursor: pointer;
   text-decoration: none;
   padding: 10px;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.search {
+  position: absolute;
+  right: 10px;
 }
 .hero{
   height: 360px;
@@ -136,18 +143,19 @@ nav {
   font-family: 'Cherry Swash', cursive;
   font-weight: 400;
   font-size: 52px;
-  letter-spacing: .5;
+  letter-spacing: .5px;
   color: #fff;
   width: 80%;
   margin: auto auto 10px;
   text-align: center;
 }
 .hero-container input {
-  height: 34px;
+  height: 35px;
   border-radius: 4px;
   border: 0;
   padding-left: 10px;
   width: 245px;
+  padding-top: 0;
 }
 
 .benefits {
@@ -187,17 +195,10 @@ nav {
   overflow: hidden;
 }
 .trending-products h5 {
-    color: #3C3D41;
     margin-bottom: 5px;
 }
 .trending-products ul {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-left: 0;
   margin: 0;
-  padding: 15px;
 }
 .trending-products-individual{
   background-color: #fff;
@@ -223,7 +224,7 @@ nav {
   font-size: 14px;
   font-family: 'Montserrat-Light', sans-serif;
   font-weight: 400;
-  letter-spacing: -0.5;
+  letter-spacing: -0.5px;
 }
 .trending-products-individual .small-text{
   color: #9B9B9B;
@@ -234,7 +235,7 @@ nav {
 .sale {
   background-color: rgba(0, 0, 0, 0.6);;
   color: #fff;
-  letter-spacing: 2;
+  letter-spacing: 2px;
   text-transform: uppercase;
   position: absolute;
   top: 10px;
@@ -271,7 +272,6 @@ nav {
 .citation h5 {
   margin: 0 0 2px;
   font-size: 13px;
-  color: #3C3D41;
 }
 .citation span {
   font-size: 10px;
@@ -302,7 +302,7 @@ nav {
 
 .recipes {
   background-color: #EAEAEA;
-  padding-top: 50px;
+  padding: 50px 0;
   text-align: center;
 }
 .recipes h2 {
@@ -313,14 +313,9 @@ nav {
 .recipes p {
   font-size: 14px;
 }
-.recipes-list{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  list-style-type: none;
-  padding: 15px;
+.recipes-list {
+  margin-bottom: 0px;
 }
-
 .recipes-individual {
   width: 30%;
   background-color: #FEFEFE;
@@ -348,9 +343,60 @@ nav {
   width: 21px;
   background-color: #FEFEFE;
 }
+footer {
+  padding: 25px 0;
+}
+.newsletter {
+  text-align: center;
+}
+.newsletter * {
+  display: inline-block;
+  vertical-align: middle;
+}
+.newsletter .mb {
+  text-transform: uppercase;
+  color: #3C3D41;
+  padding: 10px;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
 
+.newsletter input {
+  height: 32px;
+  border-radius: 4px;
+  border: 0;
+  padding-left: 10px;
+  width: 180px;
+  padding-top: 0;
+  background-color: #EAEAEA;
+}
+
+.newsletter button {
+  height: 32px;
+  width: 41px;
+  background-color: #4A4A4A;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.social {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.social img {
+  padding: 0 15px;
+  cursor: pointer;
+}
 
 @media (max-width: 767px) {
+  header {
+    height: auto;
+  }
+  .logo, .header-controls {
+    margin: auto;
+  }
   .hero-container h1{
     font-size: 26px;
     margin-bottom: 10px;
@@ -362,12 +408,14 @@ nav {
     width: 100%;
     margin: 20px auto;
   }
+  .search {position: relative;}
   .benefits-container {
     width: 90%;
     margin: 15px 0;
   }
   .trending-products-individual{
-    width: 40%;
+    width: 47%;
+    margin-bottom: 15px;
   }
   .coupon {
     width: 300px;
