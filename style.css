@@ -2,8 +2,8 @@
     font-family: "Montserrat-Light";
     src: url(fonts/Montserrat-Light.otf) format("truetype");
 }
-header {
-  background-color: #6E4961;
+body {
+  margin: 0;
 }
 .mb {
   font-family: 'Montserrat', sans-serif;
@@ -30,16 +30,54 @@ header {
   text-transform: uppercase;
   cursor: pointer;
 }
+header {
+  background-color: #6E4961;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  margin-left: 10px;
+}
 .header-controls {
-  float: right;
   color: #fff;
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 2
 }
+.primary {
+  margin: 12px;
+}
+.primary img {
+  margin-left: 7px;
+  padding-bottom: 1px;
+}
 .cart {
   background-color: #FFC306;
+  margin: 12px;
+  position: relative;
+  width: 110px;
+  height: 37px;
 }
+.cart img {
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.cart span {
+  display: inline-block;
+  vertical-align: middle;
+}
+/*.cart:before {
+  content: '';
+  background: url('icons/cart.svg') center center no-repeat;
+  background-size: cover;
+  width: 14px;
+  height: 15px;
+  background-size: cover;
+  display: block;
+}*/
 
 nav {
   display: flex;
