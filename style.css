@@ -14,6 +14,9 @@ header {
   font-family: 'Montserrat-Light', sans-serif;
   font-weight: 400;
 }
+.charcoal {
+  color: #4A4A4A;
+}
 .green-btn {
   background-color: #8FD295;
   font-family: 'Montserrat', sans-serif;
@@ -155,12 +158,13 @@ nav {
   flex-wrap: wrap;
   justify-content: space-between;
   padding-left: 0;
-  margin: 0
+  margin: 0;
+  padding: 15px;
 }
 .trending-products-individual{
   background-color: #fff;
   width: 20%;
-  margin: 15px;
+  /*margin: 15px;*/
   position: relative;
   border-radius: 4px;
   padding: 20px 0;
@@ -178,7 +182,6 @@ nav {
   font-size: 15px;
 }
 .trending-products-individual .body-text {
-  color: #4A4A4A;
   font-size: 14px;
   font-family: 'Montserrat-Light', sans-serif;
   font-weight: 400;
@@ -211,7 +214,6 @@ nav {
 .trending-products blockquote {
   font-family: 'Cherry Swash', cursive;
   font-size: 24px;
-  color: #4A4A4A;
   width: 80%;
   margin: 50px auto 20px;
 }
@@ -253,12 +255,60 @@ nav {
   margin: 10px 0;
 }
 .coupon .ml {
-  color: #4A4A4A;
   padding: 0 10px;
 }
 .coupon .green-btn {
   background-color: #fff;
   color: #4A4A4A;
+}
+
+.recipes {
+  background-color: #EAEAEA;
+  padding-top: 50px;
+  text-align: center;
+}
+.recipes h2 {
+  text-transform: none;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.recipes p {
+  font-size: 14px;
+}
+.recipes-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 15px;
+}
+
+.recipes-individual {
+  width: 30%;
+  background-color: #FEFEFE;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-radius: 4px;
+  overflow: hidden;
+  /*background: linear-gradient(#EAEAEA , #FEFEFE);*/
+}
+.recipes-individual img {
+  width: 100%;
+  background-color: #EAEAEA;
+}
+.recipes-individual h4 {
+  font-size: 15px;
+  color: #393D3F;
+  padding: 0 7.5%;
+  height: 36px;
+  text-transform: none;
+}
+.stars {
+  /*background-color: #fff;*/
+}
+.stars img{
+  width: 21px;
+  background-color: #FEFEFE;
 }
 
 
@@ -284,5 +334,11 @@ nav {
   .coupon {
     width: 300px;
     padding: 30px 0;
+  }
+
+
+  .recipes-individual {
+    width: 90%;
+    margin: 15px auto;
   }
 }
