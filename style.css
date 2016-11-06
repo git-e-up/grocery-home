@@ -59,6 +59,7 @@ header {
 }
 .primary {
   margin: 12px;
+  cursor: pointer;
 }
 .primary img {
   margin-left: 7px;
