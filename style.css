@@ -203,7 +203,6 @@ nav {
 .trending-products-individual{
   background-color: #fff;
   width: 20%;
-  /*margin: 15px;*/
   position: relative;
   border-radius: 4px;
   padding: 20px 0;
@@ -323,7 +322,6 @@ nav {
   padding-bottom: 20px;
   border-radius: 4px;
   overflow: hidden;
-  /*background: linear-gradient(#EAEAEA , #FEFEFE);*/
 }
 .recipes-individual img {
   width: 100%;
@@ -336,9 +334,7 @@ nav {
   height: 36px;
   text-transform: none;
 }
-.stars {
-  /*background-color: #fff;*/
-}
+
 .stars img{
   width: 21px;
   background-color: #FEFEFE;
